@@ -1,5 +1,65 @@
-@import "settings";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $color-bg;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #2b2948
+}
+
+#particles {
+    position: absolute;
+    opacity: 0.6;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    background: url('../img/header.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 50vw;
+    transition: width 50ms ease-in-out;
+    box-shadow: inset -1px 0px 10px 0px rgba(0,0,0,0.58);
+    h1, 
+    h2 {
+        z-index: 20;
+        font-weight: normal;
+        pointer-events: none;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+}
+
+.code {
+    background-color: #2b2948;
+    position: relative;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 50ms ease-in-out;
+    &__gif {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.skills {
+    height: 100vh;
 }
